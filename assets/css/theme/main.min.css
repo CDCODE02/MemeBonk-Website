@@ -2590,8 +2590,8 @@
   --header-search-color-text-hover: var(--color-primary);
   --header-cart-color-text: inherit;
   --header-cart-color-text-hover: var(--color-primary);
-  --gradient-first: #2600fc;
-  --gradient-second: #ff00ea;
+  --gradient-first: #b155b1;
+  --gradient-second: #ef8500;
   --gradient-angle: 25deg;
 }
 [class*="uk-width"] {
