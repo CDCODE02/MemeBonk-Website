@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zxx" class="uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-20 uk-dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MemeBonk</title>
+        <meta name="description" content="MemeBonk combines creative and humorous content with innovative tokenomics to deliver a truly unique and entertaining experience for its holders. The project focuses on creating a positive and inclusive community where members can laugh and enjoy the ride together and MemeBonk is taking inspiration from various popular memes.">
+        <meta name="theme-color" content="#741ff5">
+
+        <link rel="icon" type="image/x-icon" href="/assets/images/13.png">
+        <!-- preload head styles -->
+        <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="../assets/fonts/unicons/Unicons.woff?lkolxg" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8.3.2/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" as="style">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.2/css/uikit.min.css" />
+        <link rel="stylesheet" href="path/to/uikit/css/uikit.min.css" />
+        
+
+
+        <!-- <link rel="preload" href="../assets/css/theme/main.min.css" as="style"> -->
+
+        <!-- preload footer scripts -->
+        <link rel="preload" href="../assets/js/uikit.min.js" as="script">
+        <link rel="preload" href="../assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="../assets/js/jquery.min.js" as="script">
+        <link rel="preload" href="../assets/js/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="../assets/js/feather.min.js" as="script">
+        <link rel="preload" href="../assets/js/typed.min.js" as="script">
+        <link rel="preload" href="../assets/js/anime.min.js" as="script">
+        <link rel="preload" href="../assets/js/app.js" as="script">
+        <link rel="preload" href="../assets/js/data-attr-helper.js" as="script">
+        <link rel="preload" href="../assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="../assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper.js" as="script">
+
+        <!-- <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script"> -->
+
+        <!-- include styles -->
+        <script src="../assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="../assets/css/theme/main.min.css">
+
+        <!-- Include UIkit Font Files -->
+<link rel="stylesheet" href="path/to/uikit/fonts/fontawesome/css/all.min.css" />
+
+        <!-- include scripts -->
+        <script src="../assets/js/uikit.min.js"></script>
+        <script src="../assets/js/uikit-components.js"></script>
+    </head>
+    <body class="uni-body">
+
+        <!-- Dark/Light toggle -->
+
+        <!-- Dark/Light toggle 
+        <div class="darkmode-trigger uk-position-bottom-right uk-position-small uk-position-fixed uk-box-shadow-large uk-radius-circle" data-darkmode-toggle="">
+            <label class="switch">
+                <span class="sr-only">Dark mode toggle</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+-->
+        <!-- Menu modal -->
+        <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
+            <div class="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
+                <div class="uni-mobile-menu-wrap uk-flex-column uk-flex-between" data-uk-height-viewport="offset-bottom: true;">
+                    <div class="uni-mobile-menu-content">
+                        <header class="uk-card uk-card-2xsmall uk-flex-middle uk-flex-between">
+                            <div class="uk-flex-1">
+                                <button aria-label="Close Menu" class="uk-offcanvas-close uk-button uk-button-small uk-button-icon uk-button-default uk-button-outline uk-radius-circle" type="button">
+                                    <i class="uk-icon-small" data-feather="arrow-left"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h5 class="uk-h5 uk-text-uppercase uk-margin-remove">Navigation</h5>
+                            </div>
+                            <div class="uk-flex-1"></div>
+                        </header>
+                        <hr class="uk-margin-remove">
+                        <div class="uk-card uk-card-small">
+                            <div class="uk-panel">
+                                <ul class="uk-nav uk-nav-default">
+                                    <li><a href="#HomeMain1">Home</a></li>
+                                    <li><a href="#uni_about">About</a></li>
+                                    <li><a href="#uni_tokenomics">Tokenomics</a></li>
+                                    <li><a href="#uni_roadmap">Roadmap</a></li>
+                                    <li><a href="https://x.com/meme_bonkbsc"><strong>X</strong>(Twitter)</a></li>
+                                    <li><a href="https://t.me/memebonkbsc">Telegram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   
+
+        <!-- Wrapper start -->
+        <div class="wrap">
+
+            <!-- Header start -->
+            <header id="HomeMain1" class="uni-header uk-position-top">
+                <div class="uni-header-navbar" data-uk-sticky="top: 70; show-on-up: false; animation: uk-animation-slide-top" data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 0;">
+                    <div class="uk-container">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                            <div class="uk-navbar-top">
+                                <div class="uk-navbar-left">
+                                    <a class="uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove" href="index.html"> <img class="uk-visible dark:uk-hidden" width="180" src="../assets/images/logo_new.png" alt="MemeBonk" loading="lazy"> <img class="uk-hidden dark:uk-visible" width="340" src="../assets/images/logo_new.png" alt="memeleon" loading="lazy"> </a>
+                                </div>
+
+                                <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                    <ul class="uk-navbar-nav dark:uk-text-gray-10 uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80" data-uk-navbar-bound>
+                                        <li><a href="#HomeMain1">Home</a></li>
+									    <li><a href="#uni_about">About</a></li>
+                                        <li><a href="#uni_tokenomics">Tokenomics</a></li>
+                                        <li><a href="#uni_roadmap">Roadmap</a></li>
+                                        
+                                    </ul>
+                                    <div class="uk-navbar-item">
+                                        <!-- <ul class="uk-subnav uk-subnav-small uk-visible@m">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="uk-icon-button uk-icon-twitter"></i>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul> -->
+                                        <a href="https://x.com/meme_bonkbsc" class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l" data-uk-toggle="">
+                                            <span><strong>X</strong></span>
+                                        </a>
+
+                                        <!-- header: call to actions -->
+                                        <a href="https://t.me/memebonkbsc" class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l" data-uk-toggle="">
+                                            <span>Telegram</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="uk-navbar-item uk-hidden@m">
+                                        <!-- <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-icon uk-hidden@m uk-margin-small-right" data-uk-toggle="">
+                                            <i class="uk-icon unicon-wallet"></i>
+                                        </a> -->
+                                        <a href="#uni_mobile_menu" data-uk-toggle>
+                                            <span class="uk-icon uk-icon-medium material-icons">menu</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Header end -->
+
+            <!-- Hero start -->
+            <div id="uni_hero" class="uni-hero uk-section uk-section-xlarge uk-padding-remove-bottom uk-panel">
+                <div class="uk-position-top uk-position-z-index-negative uk-overflow-hidden uk-blend-overlay" data-uk-height-viewport="">
+                    <img class="uk-position-top-left uk-position-fixed uk-blur-large" style="left: -4%; top: -4%" width="500" src="../assets/images/gradient-circle.svg" alt="Circle">
+                    <img class="uk-position-bottom-right uk-position-fixed uk-blur-large" style="right: -4%; bottom: -4%" width="500" src="../assets/images/gradient-circle.svg" alt="Circle">
+                </div>
+                <div class="uk-position-top uk-position-z-index-negative" data-uk-height-viewport="">
+                    <div class="uk-position-cover uk-background-cover uk-opacity-10 dark:uk-hidden" data-src="../assets/images/gradient-01.png" data-uk-img></div>
+                    <div class="uk-position-cover uk-background-cover uk-opacity-20 uk-hidden dark:uk-visible" data-src="../assets/images/gradient-01.png" data-uk-img></div>
+                </div>
+                <div class="uk-panel uk-position-z-index">
+                    <div class="uk-container">
+                        <div class="uk-panel">
+                            <div class="uk-grid uk-grid-2xlarge uk-flex-middle uk-flex-between" data-uk-grid data-uk-height-viewport="offset-top: true; offset-bottom: 20;">
+                                <div class="uk-width-5-12@m">
+                                    <div class="uk-panel uk-position-z-index uk-text-center uk-text-left@m" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                                        
+                                        
+                                        
+                                        <h2 class="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m">MemeBonk</h2>
+                                        <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted"> MemeBonk combines creative and humorous content with innovative tokenomics to deliver a truly unique and entertaining experience for its holders.</p>
+                                        <a href="#" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
+                                            <span>BUY $MMB</span>
+                                            <i class="uk-text-bold"></i>
+                                        </a>
+										<a href="#" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
+                                            <span>Contract</span>
+                                            <i class="uk-text-bold"></i>
+                                        </a>
+										<a href="#" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
+                                            <span>Chart</span>
+                                            <i class="uk-text-bold"></i>
+                                        </a>
+										<!-- <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted">9% reward this week: USDT</p> -->
+										<!-- <a href="https://bscscan.com/address/0x55d398326f99059ff775485246999027b3197955#code" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
+                                            <span>USDT Contract</span>
+                                            <i class="uk-text-bold"></i>
+                                        </a> -->
+                                    </div>
+                                </div>
+                                <div class="uk-width-6-12@m uk-flex-center">
+                                    <div class="uk-panel" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;">
+                                        
+										
+										
+                                        
+                                        <img class="uk-position-right uk-opacity-10" width="300" src="../assets/images/blob-dashed.svg" alt="Blog dashed" style="top: -10%; right: 16%; fill: transparent" data-uk-svg="">
+                                        <svg style="top: -20%" class="uk-position-right uk-opacity-30" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="#F796FF" d="M47.5,-67.2C55.9,-59.3,53.2,-37.9,56.7,-20.1C60.2,-2.3,69.9,11.8,70.8,27.3C71.7,42.9,63.8,59.9,50.6,64.4C37.3,68.9,18.6,60.8,-0.3,61.2C-19.3,61.6,-38.6,70.7,-53.5,66.7C-68.4,62.8,-78.9,45.9,-78.8,29.5C-78.7,13.2,-67.9,-2.7,-59.8,-16.8C-51.6,-31,-46,-43.3,-36.5,-50.9C-27,-58.4,-13.5,-61.1,3,-65.2C19.6,-69.4,39.1,-75.1,47.5,-67.2Z" transform="translate(100 100)">
+                                        </svg>
+                                        <div class="uk-grid uk-grid-xsmall uk-child-width-1-2" data-uk-grid="masonry: true;">
+                                            <div>
+                                                <div class="uni-item uk-card uk-overflow-hidden uk-radius uk-radius-large@m uk-box-shadow-hover-medium uk-visible-toggle uk-transition-toggle uk-box-shadow-medium uk-background-white dark:uk-background-white-5">
+                                                    <div class="uni-item-featured-image uk-panel uk-flex-middle uk-flex-center">
+                                                        <div class="uk-panel uk-image-middle">
+                                                            <img src="../assets/images/artwork/05.png" alt="Artwork" class="uk-radius-small uk-radius-large@m">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-margin-large-top">
+                                                <div class="uni-item uk-card uk-overflow-hidden uk-radius uk-radius-large@m uk-box-shadow-hover-medium uk-visible-toggle uk-transition-toggle uk-box-shadow-medium uk-background-white dark:uk-background-white-5">
+                                                    <div class="uni-item-featured-image uk-panel uk-flex-middle uk-flex-center">
+                                                        <div class="uk-panel uk-image-middle">
+                                                            <img src="../assets/images/artwork/13.png" alt="Artwork" class="uk-radius-small uk-radius-large@m">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero end -->
+
+            <!-- brands start 
+            <div class="uni-brands uk-padding-3xlarge-top uk-padding-medium-bottom uk-padding-remove-top@m uk-padding-xlarge-bottom@m uk-panel uk-overflow-hidden" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 300;">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-panel uk-text-center dark:uk-text-white">
+                        <header class="uk-panel uk-flex-center uk-flex-middle uk-text-center">
+                            <span class="uk-text-overline uk-text-bold uk-text-muted">.</span>
+                        </header>
+                        <div class="uk-grid uk-grid-xlarge@m uk-child-width-1-2 uk-child-width-expand@m uk-flex-middle uk-flex-center uk-grid uk-margin-medium-top" data-uk-grid>
+                            <div><img class="uk-width-xsmall" src="../assets/images/pepe.png" alt="pepe" data-uk-svg></div>
+                            <div><img class="uk-width-xsmall" src="../assets/images/wallets/" alt="." data-uk-svg></div>
+                            <div><img class="uk-width-xsmall" src="../assets/images/wallets/" alt="." data-uk-svg></div>
+                            <div><img class="uk-width-xsmall" src="../assets/images/wallets/" alt="." data-uk-svg></div>
+                            <div><img class="uk-width-xsmall" src="../assets/images/wallets/" alt="." data-uk-svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            brands end -->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="" alt="" data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 100;">
+<!-- about start -->
+            <div id="uni_about"  class="uni-about uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container">
+                    <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                        <div class="uk-panel uk-text-center">
+                            <h2 class="uk-h3 uk-h1@m">Step into MemeBonk</h2>
+                        </div>
+                    </header>
+                    <div class="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
+                        <div class="uk-grid uk-grid-2xlarge uk-grid-3xlarge@m uk-child-width-1-1" data-uk-grid="">
+                            <div>
+                                <div class="uk-panel">
+                                    <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m" data-uk-grid="">
+                                        <div>
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m" data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 200;">
+                                                <img src="../assets/images/05.png" alt="Step into MemeBonk">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-panel" data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
+                                                <span class="uk-text-overline uk-text-gradient">Goals</span>
+                                                <h3 class="uk-h3 uk-h1@m">Step into MemeBonk</h3>
+                                                <p class="uk-text-large@m">MemeBonk project focuses on creating a positive and inclusive community where members can laugh and enjoy the ride together and MemeBonk is taking inspiration from various popular memes to deliver a truly unique and entertaining experience for its holders.</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel">
+                                    <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m" data-uk-grid="">
+                                        <div>
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m" data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
+                                                <img src="../assets/images/13.png" alt="MemeBonk">
+                                            </div>
+                                        </div>
+                                        <div class="uk-flex-first@m">
+                                            <div class="uk-panel" data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;">
+                                                <span class="uk-text-overline uk-text-gradient">Our Token</span>
+                                                <h3 class="uk-h3 uk-h1@m">MemeBonk Token</h3>
+                                                <p class="uk-text-large@m">MemeBonk combines creative and humorous content with innovative tokenomics to deliver a truly unique and entertaining experience for its holders. The project focuses on creating a positive and inclusive community where members can laugh and enjoy the ride together and MemeBonk is taking inspiration from various popular memes.</p>
+                                            <div class="uk-grid uk-grid-large@m uk-grid-match uk-child-width-1-2@m uk-margin-medium-top uk-margin-large-top@m" data-uk-grid="">
+                                                    
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- about end -->
+
+            <!-- <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="../assets/images/divider-01.svg" alt="Divider" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"> -->
+
+            <!-- tokenomics start -->
+            <div id="uni_tokenomics" class="uni-tokenomics uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container">
+                    <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                        <div class="uk-panel uk-text-center">
+                            <h2 class="uk-h3 uk-h1@m">Tokenomics</h2>
+                        </div>
+                    </header>
+					<div id="uni_numbers" class="uni-numbers uk-section uk-section-large@m">
+                <div class="uk-container">
+                    <div class="uk-panel">
+                        
+                        
+                        <div class="uk-grid uk-grid-large uk-grid-2xlarge@m uk-child-width-expand@m uk-text-center uk-text-muted" data-uk-grid="" data-anime="targets: > *; opacity:[0, 1]; scale:[0.5, 1]; onview: -250; delay: anime.stagger(100);">
+                            <div>
+                                <div class="uk-panel">
+                                    <h4 class="uk-h3 uk-heading-d3@m uk-text-gradient uk-margin-xsmall uk-margin@m">$MMB</h4>
+                                    <span>Token Ticker</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel">
+                                    <h4 class="uk-h3 uk-heading-d3@m uk-text-gradient uk-margin-xsmall uk-margin@m">1B</h4>
+                                    <span>Total Supply</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel">
+                                    <h4 class="uk-h3 uk-heading-d3@m uk-text-gradient uk-margin-xsmall uk-margin@m">10%</h4>
+                                    <span>Burn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="uk-panel ">
+                        <div class="uk-grid uk-grid-2xlarge uk-grid-3xlarge@m uk-child-width-1-1" data-uk-grid="">
+                                <div class="uk-panel">
+                                    <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m" data-uk-grid="">
+                                        <div>
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m" data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
+                                                <img src="../assets/images/mmb3.jpeg" alt="MemeBonk Tokenomics">
+                                            </div>
+                                        </div>
+                                        <div class="uk-flex-first@m">
+                                            <div class="uk-panel" data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;">
+                                                
+                                                <div class="uk-grid uk-grid-large@m uk-grid-match uk-child-width-1-2@m uk-margin-medium-top uk-margin-large-top@m" data-uk-grid="">
+                                                    <div>
+                                                        <div class="uk-panel">
+                                                            <div class="uk-grid uk-grid-xsmall uk-grid-small@m" data-uk-grid="">
+                                                                <div>
+                                                                    <div class="uk-card uk-card-xsmall uk-radius-medium uk-radius-large@m uk-background-gradient uk-flex-middle uk-flex-center">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <span class="uk-text-small@m"
+                                                                        >Event Reward 5% <br> Marketing 5% <br> community 5% <br> Team 5% </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+													<div>
+                                                        <div class="uk-panel">
+                                                            <div class="uk-grid uk-grid-xsmall uk-grid-small@m" data-uk-grid="">
+                                                                <div>
+                                                                    <div class="uk-card uk-card-xsmall uk-radius-medium uk-radius-large@m uk-background-gradient uk-flex-middle uk-flex-center">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <span class="uk-text-small@m"
+                                                                        >Sell Tax: 9% <br>
+                                                                       7% Marketing <br>
+                                                                        2% Liquidity</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+													<div>
+                                                        <div class="uk-panel">
+                                                            <div class="uk-grid uk-grid-xsmall uk-grid-small@m" data-uk-grid="">
+                                                                <div>
+                                                                    <div class="uk-card uk-card-xsmall uk-radius-medium uk-radius-large@m uk-background-gradient uk-flex-middle uk-flex-center">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <span class="uk-text-small@m"
+                                                                        >Buy Tax: 9% <br>
+                                                                        7% Marketing <br>
+                                                                        2% Liquidity</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+													<div>
+                                                        <div class="uk-panel">
+                                                            <div class="uk-grid uk-grid-xsmall uk-grid-small@m" data-uk-grid="">
+                                                                <div>
+                                                                    <div class="uk-card uk-card-xsmall uk-radius-medium uk-radius-large@m uk-background-gradient uk-flex-middle uk-flex-center">
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <span class="uk-text-small@m"
+                                                                        >Max wallet: <br>
+                                                                        3%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+													<div>
+                                                        <div class="uk-panel">
+                                                            <div class="uk-grid uk-grid-xsmall uk-grid-small@m" data-uk-grid="">
+                                                                <div>
+                                                                    <div class="uk-card uk-card-xsmall uk-radius-medium uk-radius-large@m uk-background-gradient uk-flex-middle uk-flex-center">
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <span class="uk-text-small@m"
+                                                                        >Max TX: <br>
+                                                                        3%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- tokenomics end -->
+
+            
+			<!-- <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="../assets/images/divider-01.svg" alt="Divider" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"> -->
+            <!-- roadmap start -->
+            <div id="uni_roadmap" class="uni-roadmap uk-section uk-section-large@m uk-padding-3xlarge-bottom@m uk-panel uk-overflow-hidden swiper-parent">
+                <div class="uk-container">
+                    <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-text-center uk-child-width-auto@m uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                        <div class="uk-panel">
+                            <h2 class="uk-h3 uk-h1@m">MemeBonk Roadmap</h2>
+                        </div>
+                    </header>
+                    <div class="uk-panel uk-width-medium uk-margin-auto uk-margin-medium-top uk-margin-2xlarge-top@m" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;">
+                        <div class="swiper swiper-match uk-overflow-unset" data-swiper="gap: 16; dots-type: progressbar;" data-swiper-m="gap: 32;">
+                            <div class="swiper-wrapper uk-grid-match uk-flex-middle" data-anime="targets: > * > *; opacity:[0, 1]; scale:[0.5, 1]; onview: -400; delay: anime.stagger(200);">
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uni-phase uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-radius uk-radius-xlarge@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                            
+                                            <div class="uk-panel">
+                                                <span class="uni-phase-count uk-text-overline uk-text-gradient">Phase 01</span>
+                                                
+                                                
+                                                <hr class="uk-width-2xsmall uk-margin-medium@m">
+                                                <ul class="uk-list uk-text-small uk-text-medium@m">
+                                                    <li class="uk-flex-middle"> Recruit of team members</li>
+                                                    <li class="uk-flex-middle"> Community building</li>
+                                                    <li class="uk-flex-middle"> Go live on Pancakeswap</li>
+                                                    <li class="uk-flex-middle"> Public sale</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uni-phase uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-radius uk-radius-xlarge@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                            
+                                            <div class="uk-panel">
+                                                <span class="uni-phase-count uk-text-overline uk-text-gradient">Phase 02</span>
+                                                
+                                                <hr class="uk-width-2xsmall uk-margin-medium@m">
+                                                <ul class="uk-list uk-text-small uk-text-medium@m">
+                                                    <li class="uk-flex-middle"> Website launch</li>
+                                                    <li class="uk-flex-middle"> Events(Meme contest and others)</li>
+                                                    <li class="uk-flex-middle"> Marketing</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uni-phase uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-radius uk-radius-xlarge@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                            
+                                            <div class="uk-panel">
+                                                <span class="uni-phase-count uk-text-overline uk-text-gradient">Phase 03</span>
+                                                
+                                               
+                                                <hr class="uk-width-2xsmall uk-margin-medium@m">
+                                                <ul class="uk-list uk-text-small uk-text-medium@m">
+                                                    <li class="uk-flex-middle"> Exchange listing</li>
+													<li class="uk-flex-middle"> Voting</li>
+                                                    <li class="uk-flex-middle"> Events</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <div class="uni-phase uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-radius uk-radius-xlarge@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                            
+                                            <div class="uk-panel">
+                                                <span class="uni-phase-count uk-text-overline uk-text-gradient">Phase 04</span>
+                                               
+                                               
+                                                <hr class="uk-width-2xsmall uk-margin-medium@m">
+                                                <ul class="uk-list uk-text-small uk-text-medium@m">
+                                                    <li class="uk-flex-middle">MemeBonk NFT Launch</li>
+                                                    <li class="uk-flex-middle"> Partnership</li>
+                                                    <li class="uk-flex-middle"> this is the most secret</li>
+                                                    <li class="uk-flex-middle"> Broad Marketing</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+
+                            <!-- Pagination -->
+                            <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal swiper-dotnav"></div>
+                        </div>
+
+                        <!-- Navigation -->
+                        <a aria-label="Next" href="#next" class="swiper-next uk-button uk-button-small uk-button-icon uk-border uk-radius-circle uk-position-center-right uk-position-z-index uk-box-shadow-small dark:uk-background-gray-100"><i class="uk-icon-small" data-feather="chevron-right"></i></a>
+                        <a aria-label="Prev" href="#prev" class="swiper-prev uk-button uk-button-small uk-button-icon uk-border uk-radius-circle uk-position-center-left uk-position-z-index uk-box-shadow-small dark:uk-background-gray-100"><i class="uk-icon-small" data-feather="chevron-left"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- roadmap end -->
+			<!-- <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="../assets/images/divider-01.svg" alt="Divider" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 400;"> -->
+<!-- brands start 
+            <div class="uni-brands uk-section uk-section-xlarge@m uk-panel uk-overflow-hidden" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 300;">
+                <div class="uk-container">
+                    <div class="uk-panel uk-text-center dark:uk-text-white">
+                        <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-text-center uk-child-width-auto@m uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                        <div class="uk-panel">
+                            <h2 class="uk-h3 uk-h1@m">Partners:</h2>
+                        </div>
+                    </header>
+                        <div class="uk-grid uk-child-width-1-2 uk-child-width-expand@m uk-flex-middle uk-flex-center uk-grid uk-margin-medium-top" data-uk-grid>
+                            <div>
+    <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m dark:uk-background-white-5">
+        <a href="https://moonscan.com/token/0x5e7f7b147d7b54762dcfe98442e5e2c096576630">
+            <img class="uk-width-xsmall uk-text-gray-60 dark:uk-text-gray-20" src="../assets/images/moonscan.png" alt="Moonscan" data-uk-svg>
+        </a>
+    </div>
+</div>
+
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m dark:uk-background-white-5">
+								<a href="https://pancakeswap.finance/swap?outputCurrency=0x5e7f7b147d7b54762DCfe98442e5e2C096576630&inputCurrency=BNB">
+                                    <img class="uk-width-xsmall uk-text-gray-60 dark:uk-text-gray-20" src="../assets/images/full-pancakeswap-logo.svg" alt="Pancakeswap" data-uk-svg>
+								</a>	
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m dark:uk-background-white-5">
+								<a href="https://moontok.io/coins/memeleon#">
+                                    <img class="uk-width-xsmall uk-text-gray-60 dark:uk-text-gray-20" src="../assets/images/moontok-fulllogo.svg"  alt="Moontok" data-uk-svg>
+								</a>	
+									
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m dark:uk-background-white-5">
+                                <a href="https://Clowncoinbsc.com">								
+                                    <img class="uk-width-xsmall uk-text-gray-60 dark:uk-text-gray-20" src="../assets/images/clown.png" alt="Clowncoin" data-uk-svg>
+								</a>	
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m dark:uk-background-white-5">
+								<a href="https://ntm.ai/token/0x5e7f7b147d7b54762DCfe98442e5e2C096576630?graph=0xf1AedF905B7ceB25F53cA366d905D88d93267B9B">
+                                    <img class="uk-width-xsmall uk-text-gray-60 dark:uk-text-gray-20" src="../assets/images/ntm.png" alt="NTM" data-uk-svg>
+								</a>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+             brands end -->
+			 <!-- <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="../assets/images/divider-01.svg" alt="Divider"> -->
+            <!-- how to buy start -->
+            <div id="uni_buy" class="uni-buy uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container uk-container-small">
+                    <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;">
+                        <div class="uk-panel uk-text-center">
+                            <h2 class="uk-h3 uk-h1@m">How to buy MemeBonk Token</h2>
+							
+                            <a href="#" class="uk-button uk-button-small uk-button-large@m uk-button-gradient uk-margin-small-top uk-margin-large-top@m">$MMB Contract Address</a>
+                        </div>
+                    </header>
+                    <div class="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 300;">
+                        
+                        <div class="uk-grid uk-child-width-1-2@s uk-grid-match" data-uk-grid="" data-anime="targets: > *; opacity:[0, 1]; translateY:[24, 0]; onview: -250; delay: anime.stagger(100);">
+                            <div>
+                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                    <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
+                                        <div class="uk-width-1-3 uk-width-1-4@m">
+                                            <img src="../assets/images/icon-01.png" alt="Icon">
+                                        </div>
+                                        <div class="uk-panel uk-width-expand">
+                                            <h3 class="uk-h5 uk-h4@m">Install wallet</h3>
+                                            <p>Install MetaMask & create a wallet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                    <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
+                                        <div class="uk-width-1-3 uk-width-1-4@m">
+                                            <img src="../assets/images/icon-02.png" alt="Icon">
+                                            <div hidden class="uk-card uk-card-xsmall uk-radius-medium uk-background-gradient uk-flex-middle uk-flex-center uk-margin-medium-bottom@m">
+                                                <i class="uk-icon-medium uk-icon-medium@m unicon-select-window"></i>
+                                            </div>
+                                        </div>
+                                        <div class="uk-panel uk-width-expand">
+                                            <h3 class="uk-h5 uk-h4@m">Connect Wallet</h3>
+                                            <p>Connect your wallet to pancakeswap</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                    <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
+                                        <div class="uk-width-1-3 uk-width-1-4@m">
+                                            <img src="../assets/images/icon-03.png" alt="Icon">
+                                            <div hidden class="uk-card uk-card-xsmall uk-radius-medium uk-background-gradient uk-flex-middle uk-flex-center uk-margin-medium-bottom@m">
+                                                <i class="uk-icon-medium uk-icon-medium@m unicon-select-window"></i>
+                                            </div>
+                                        </div>
+                                        <div class="uk-panel uk-width-expand">
+                                            <h3 class="uk-h5 uk-h4@m">Copy Contract</h3>
+                                            <p>Copy and paste the Contract address</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                    <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
+                                        <div class="uk-width-1-3 uk-width-1-4@m">
+                                            <img src="../assets/images/icon-04.png" alt="Icon">
+                                            <div hidden class="uk-card uk-card-xsmall uk-radius-medium uk-background-gradient uk-flex-middle uk-flex-center uk-margin-medium-bottom@m">
+                                                <i class="uk-icon-medium uk-icon-medium@m unicon-select-window"></i>
+                                            </div>
+                                        </div>
+                                        <div class="uk-panel uk-width-expand">
+                                            <h3 class="uk-h5 uk-h4@m">Swap</h3>
+                                            <p>Select BNB to swap for $MMB and hit "Swap" bottom</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- how to buy end -->
+
+            
+
+            
+
+            <!-- cta start -->
+            <div class="uni-cta uk-section uk-section-2xlarge@m uk-panel uk-overflow-hidden">
+                <!-- <img class="uk-cover uk-opacity-10" data-uk-cover src="" alt=""> -->
+                <div class="uk-container">
+                    <div class="uk-card uk-flex-center uk-text-center">
+                        <div class="uk-panel uk-width-xlarge@m uk-position-z-index" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                            <!-- <img class="uk-position-top-left" width="24" src="../assets/images/objects/circle-01.png" alt="Object" style="top: 0%; left: -16%">
+                            <img class="uk-position-bottom-right" width="24" src="../assets/images/objects/x.png" alt="Object" style="bottom: 16%; right: -8%">
+                            <img class="uk-position-top-right" width="40" src="../assets/images/objects/ethereum-02.png" alt="Object" style="top: 0%; right: -16%">
+                            <img class="uk-position-bottom-left" width="48" src="../assets/images/objects/bitcoin-01.png" alt="Object" style="bottom: 16%; left: -8%"> -->
+                            <h2 class="uk-h3 uk-heading-d1@m">Join the MemeBonk community!</h2>
+                            <a href="https://t.me/memebonkbsc" class="uk-button uk-button-small uk-button-large@m uk-button-gradient uk-margin-small-top uk-margin-large-top@m">Telegram Community</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cta end -->
+
+
+        <!-- Footer start -->
+        <footer class="uni-footer uk-section uk-section-xlarge@m">
+            <div class="uk-container">
+                <div class="uk-panel">
+                    
+                    
+                    <div class="uk-panel uk-text-small">
+                        <div class="uk-grid uk-child-width-auto@m uk-flex-center uk-flex-between@m uk-text-center uk-text-left@m" data-uk-grid>
+                            <div>
+                                <ul class="uk-subnav uk-subnav-small uk-text-muted uk-flex-center">
+                                    <li>
+                                        <a href="https://x.com/meme_bonkbsc"><span><strong>X (Twitter)</strong></span></a>
+                                    </li>
+                                    <li class="uk-margin-small-left">
+                                        <a href="#" data-uk-totop="" data-uk-scroll><strong>Home</strong></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="uk-flex-first@m uk-flex-center">
+                                <p class="uk-text-muted">© 2023 MemeBonk. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer end -->
+
+        <!-- include scripts -->
+        <script defer src="../assets/js/jquery.min.js"></script>
+        <script defer src="../assets/js/swiper-bundle.min.js"></script>
+        <script defer src="../assets/js/feather.min.js"></script>
+        <script defer src="../assets/js/typed.min.js"></script>
+        <script defer src="../assets/js/anime.min.js"></script>
+        <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/data-attr-helper.js"></script>
+        <script defer src="../assets/js/swiper-helper.js"></script>
+        <script defer src="../assets/js/typed-helper.js"></script>
+        <script defer src="../assets/js/anime-helper.js"></script>
+
+        <script>
+   // Initialize UIkit
+   UIkit.init();
+</script>
+        <!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.2/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.2/js/uikit-icons.min.js"></script>
+
+<script src="path/to/uikit/js/uikit.min.js"></script>
+
+        <!-- <script defer src="../assets/js/anime-helper-defined-timelines.js"></script> -->
+        <script>
+            // Schema toggle via URL
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const getSchema = urlParams.get("schema");
+            if (getSchema === "dark") {
+                document.documentElement.classList.add("uk-dark");
+                localStorage.setItem("darkMode", "1");
+            } else if (getSchema === "light") {
+                document.documentElement.classList.remove("uk-dark");
+                localStorage.setItem("darkMode", "0");
+            }
+        </script>
+    </body>
+</html>
